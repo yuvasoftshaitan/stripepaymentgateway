@@ -1,4 +1,4 @@
-var stripe = Stripe(" <%= Rails.application.credentials[:stripe][:public] %>");
+var stripe = Stripe(<%="pk_test_51KshGSSH5fx2zF0tNzb8vUezcBDClcw8HBN6A5nGJDaCSuBmMsWF72GJEO8CiRH5uPpJBj3177dM3UmMhFqWuXJm00UKk0dhYn");
 
   stripe.redirectToCheckout({
     // Make the id field from the Checkout Session creation API response
